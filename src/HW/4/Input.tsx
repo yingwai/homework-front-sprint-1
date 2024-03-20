@@ -1,8 +1,8 @@
-import { ChangeEvent, Dispatch, SetStateAction } from "react";
+import { ChangeEvent } from "react";
 
 type InputPropsType = {
 	currentText: string
-	setCurrentText: Dispatch<SetStateAction<string>>
+	setCurrentText: (valueInput: string) => void
 };
 
 export const Input = (props: InputPropsType) => {
